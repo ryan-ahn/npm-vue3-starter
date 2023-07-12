@@ -6,7 +6,7 @@
 
 <template>
   <section class="wrapper">
-    <h1>타이틀</h1>
+    <h1>샘플페이지</h1>
   </section>
 </template>
 

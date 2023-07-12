@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const getMockDataApi = async () => {
+export const getSampleApi = async () => {
   try {
     const Response = await axios.get('/mock.json');
     return Response.data;
