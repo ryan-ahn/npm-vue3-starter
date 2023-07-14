@@ -1,4 +1,9 @@
-# Nuxt3 + Vue3 보일러플레이트
+# Boiler Plate for Project Setting
+
+## Tech Stack
+- Core : Vue3
+- Store : pinia
+- 
 
 ## 설치 후 시작하기
 
@@ -7,8 +12,8 @@ npm install
 ```
 
 # 프로젝트 디렉토리 구조
-
-src <br/>
+- **Static(public)**
+- **Root(src)** <br/>
 ⎣&nbsp;**api** - rest api <br/>
 ⎣&nbsp;**assets** - image, icon, font 등 <br/>
 ⎣&nbsp;**components** - 최소 단위 컴포넌트(비즈니스 로직, 상태값 사용 불가) <br/>
