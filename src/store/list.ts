@@ -8,5 +8,5 @@ export const useDataStore = defineStore('data', () => {
   const setDate = (payload: string) => {
     data.value = payload
   }
-  return { data };
+  return { data, setDate };
 });
