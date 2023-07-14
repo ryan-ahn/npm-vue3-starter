@@ -3,15 +3,20 @@
 ## Tech Stack
 - Core : Vue3
 - Store : pinia
-- 
+- Bundler : WebPack
+- Formatter : ESLint + StyleLint + Prettier
 
-## 설치 후 시작하기
+## Code Pattern
+- 아토믹 디자인 패턴을 따름
+- Vue3 composition API Setup 문법을 사용함
+- ESLint + StyleLint + Prettier 포메터 조합
 
-```
-npm install
-```
+## VSCode Setting
+- setting.json 파일을 VSCode 세팅으로 입력
+- 관련 익스텐션 전부 설치
 
-# 프로젝트 디렉토리 구조
+## Code Structure
+
 - **Static(public)**
 - **Root(src)** <br/>
 ⎣&nbsp;**api** - rest api <br/>
