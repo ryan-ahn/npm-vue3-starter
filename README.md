@@ -1,5 +1,5 @@
 # Boiler Plate for Project Setting
-> Vue3 프로젝트 시작을 위한 초기 세팅 보일러 플레이트 
+> Vue3 프로젝트 시작을 위한 초기 세팅 보일러 플레이트 
 
 ## Tech Stack
 - Core : Vue3
