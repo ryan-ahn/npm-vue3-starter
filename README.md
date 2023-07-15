@@ -15,11 +15,11 @@ $ cd boilerplate-frontend-nuxt3
 $ npm install
 ```
 2. vscode 세팅
-```
+```markdown
 setting.json 파일을 vscode 세팅에 입력
-관련 익스텐션 전부 설치(컨벤션 문서 확인)
+관련 익스텐션 전부 설치(문서 확인)
 ```
-2. dev server 시작하기
+3. dev server 시작하기
 ```
 $ npm run dev
 ```
