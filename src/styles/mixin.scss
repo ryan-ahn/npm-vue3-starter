@@ -31,7 +31,7 @@
 
 @mixin ellipsisSet($line-cnt, $line-height) {
   display: -webkit-box;
-  height: $line-height * $line-cnt;
+  max-height: $line-height * $line-cnt;
   overflow: hidden;
   line-height: $line-height;
   text-overflow: ellipsis;
