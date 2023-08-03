@@ -6,7 +6,10 @@ export const useDataStore = defineStore('data', () => {
   const data = ref<string>('');
   // Set State
   const setDate = (payload: string) => {
-    data.value = payload
-  }
-  return { data, setDate };
+    data.value = payload;
+  };
+  return {
+    data,
+    setDate,
+  };
 });

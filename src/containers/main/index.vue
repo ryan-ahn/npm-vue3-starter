@@ -1,9 +1,3 @@
-<!--
- * Author : Ryan
- * Date : 2023-06-13
- * Desc : index
--->
-
 <template>
   <section class="page-wrapper">
     <div class="title-box">

@@ -7,26 +7,40 @@ module.exports = {
   plugins: ['newline'],
   extends: [
     'plugin:vue/vue3-recommended',
+    'plugin:cypress/recommended',
     '@vue/airbnb',
     '@vue/typescript/recommended',
-    'plugin:cypress/recommended',
   ],
   parserOptions: { ecmaVersion: 2020 },
   rules: {
+    // off
     'no-alert': 'off',
-    'vuejs-accessibility/click-events-have-key-events': 'off',
-    '@typescript-eslint/prefer-as-const': 'off',
-    'import/prefer-default-export': 'off',
-    'import/no-cycle': 'off',
+    'no-param-reassign': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'linebreak-style': 0,
-    'import/no-unresolved': 'off',
-    'func-call-spacing': 'off',
+    'no-restricted-syntax': 'off',
+    'no-use-before-define': 'off',
     'no-spaced-func': 'off',
+    'no-shadow': 'off',
+    'no-plusplus': 'off',
+    'no-underscore-dangle': 'off',
+    'import/no-unresolved': 'off',
+    'import/no-cycle': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'prefer-destructuring': 'off',
+    'func-call-spacing': 'off',
+    'linebreak-style': 0,
+    'vue/html-button-has-type': 'off',
+    'vuejs-accessibility/click-events-have-key-events': 'off',
+    'vuejs-accessibility/form-control-has-label': 'off',
+    'vuejs-accessibility/label-has-for': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/prefer-as-const': 'off',
+    // 타입스크립트 함수 공백 사용 불가
     '@typescript-eslint/func-call-spacing': ['error'],
     // 타입스크립트 interface 멀티라인시 콤마 적용
-    'no-shadow': 'off',
     '@typescript-eslint/member-delimiter-style': [
       'error',
       {
@@ -45,93 +59,10 @@ module.exports = {
       'error',
       { after: true },
     ],
-    // TODO Sample, Example 컴포넌트 에러 안나오도록 임시 적용 룰!
     // 컴포넌트 이름 2개 단어 미적용 룰
     'vue/multi-word-component-names': 'off',
     // kebab-case off
     'vue/attribute-hyphenation': 'off',
-    // import 2개 이상시 줄바꿈 처리
-    'newline/import-module': [
-      'error',
-      { minItems: 2 },
-    ],
-    // 객체 구조분해할당 프로퍼티 2개 이상시 줄바꿈 처리
-    'newline/object-property': [
-      'error',
-      { minItems: 2 },
-    ],
-
-    // import 순서
-    'import/order': [
-      'error',
-      {
-        groups: [
-          'builtin',
-          'external',
-          'parent',
-          'sibling',
-          'index',
-        ],
-        alphabetize: { order: 'desc' },
-      },
-    ],
-    // 탭 길이 설정
-    indent: [
-      'error',
-      2,
-    ],
-    // 배열,객체,가져오기,내보내기 멀티라인일시 마지막에 콤마
-    'comma-dangle': [
-      'error',
-      {
-        arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
-        exports: 'always-multiline',
-        functions: 'always-multiline',
-      },
-    ],
-    'max-len': [
-      'error',
-      { code: 200 },
-    ],
-    // 배열이 2개 이상일시 시작 브라켓 줄바꿈
-    'array-bracket-newline': [
-      'error',
-      { minItems: 2 },
-    ],
-    // 배열이 2개 이상일시 요소 줄바꿈
-    'array-element-newline': [
-      'error',
-      { minItems: 2 },
-    ],
-    // 구조분해할당, 가져오기, 내보내기 프로퍼티 2개 이상일시 멀티라인 적용
-    'object-curly-newline': [
-      'error',
-      {
-        ObjectExpression: {
-          multiline: true,
-          minProperties: 2,
-        },
-        ObjectPattern: {
-          multiline: true,
-          minProperties: 2,
-        },
-        ImportDeclaration: {
-          multiline: true,
-          minProperties: 2,
-        },
-        ExportDeclaration: {
-          multiline: true,
-          minProperties: 2,
-        },
-      },
-    ],
-    // 객체 멀티라인 강제 적용
-    'object-property-newline': [
-      'error',
-      { allowAllPropertiesOnSameLine: false },
-    ],
     // vue 템플릿 태그 안에 태그 어트리부트 순서 설정
     'vue/attributes-order': [
       'error',
@@ -244,12 +175,98 @@ module.exports = {
     // Template, Script, Style 태그 1칸 띄어쓰기 적용
     'vue/padding-line-between-blocks': ['error'],
     // 템플릿 태그 어트리부트 강제로 멀티라인
-    // "vue/first-attribute-linebreak":['error', {
-    //   "singleline": "below",
-    //   "multiline": "ignore"
-    // }]
+    'vue/first-attribute-linebreak': [
+      'error',
+      {
+        singleline: 'beside',
+        multiline: 'below',
+      },
+    ],
     // setup 구조분해할당 옵션
     'vue/no-setup-props-destructure': ['off'],
+    // import 2개 이상시 줄바꿈 처리
+    'newline/import-module': [
+      'error',
+      { minItems: 2 },
+    ],
+    // 객체 구조분해할당 프로퍼티 2개 이상시 줄바꿈 처리
+    'newline/object-property': [
+      'error',
+      { minItems: 2 },
+    ],
+
+    // import 순서
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'parent',
+          'sibling',
+          'index',
+        ],
+        alphabetize: { order: 'desc' },
+      },
+    ],
+    // 탭 길이 설정
+    indent: [
+      'error',
+      2,
+    ],
+    // 배열,객체,가져오기,내보내기 멀티라인일시 마지막에 콤마
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'always-multiline',
+      },
+    ],
+    'max-len': [
+      'error',
+      { code: 200 },
+    ],
+    // 배열이 2개 이상일시 시작 브라켓 줄바꿈
+    'array-bracket-newline': [
+      'error',
+      { minItems: 2 },
+    ],
+    // 배열이 2개 이상일시 요소 줄바꿈
+    'array-element-newline': [
+      'error',
+      { minItems: 2 },
+    ],
+    // 구조분해할당, 가져오기, 내보내기 프로퍼티 2개 이상일시 멀티라인 적용
+    'object-curly-newline': [
+      'error',
+      {
+        ObjectExpression: {
+          multiline: true,
+          minProperties: 2,
+        },
+        ObjectPattern: {
+          multiline: true,
+          minProperties: 2,
+        },
+        ImportDeclaration: {
+          multiline: true,
+          minProperties: 2,
+        },
+        ExportDeclaration: {
+          multiline: true,
+          minProperties: 2,
+        },
+      },
+    ],
+    // 객체 멀티라인 강제 적용
+    'object-property-newline': [
+      'error',
+      { allowAllPropertiesOnSameLine: false },
+    ],
+
   },
   overrides: [
     {
@@ -259,7 +276,7 @@ module.exports = {
     {
       files: ['src/**/*.vue'],
       rules: {
-        // 함수,변수 카멜 케이스 룰 적용
+      // 함수,변수 카멜 케이스 룰 적용
         '@typescript-eslint/naming-convention': [
           'error',
           {
