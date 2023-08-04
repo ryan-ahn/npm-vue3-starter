@@ -9,8 +9,8 @@
 - [x] 📚&nbsp;&nbsp;Composition API & Setup (Vue3)
 - [x] 🛹&nbsp;&nbsp;Simple Store (Pinia)
 - [x] 🧵&nbsp;&nbsp;Built-in Component & Layout
-- [x] 📘&nbsp;&nbsp;Configure StyleLint
-- [x] 📙&nbsp;&nbsp;Configure ESLint
+- [x] 📙&nbsp;&nbsp;Use Stric Codebase (ESLint)
+- [x] 📘&nbsp;&nbsp;Use Stric Style (StyleLint)
 - [x] ✨&nbsp;&nbsp;Setting Reset Style
 - [x] ⚡️&nbsp;&nbsp;Setting Mixin Style
 - [x] 📍&nbsp;&nbsp;Absolute path
