@@ -1,12 +1,17 @@
 module.exports = {
   plugins: ['stylelint-order'],
-  extends: 'stylelint-config-recommended-vue/scss',
+  extends: [
+    'stylelint-config-recommended-scss',
+    'stylelint-config-recommended-vue',
+  ],
   rules: {
     indentation: 2,
+    'font-family-no-missing-generic-family-keyword': null,
     'selector-pseudo-element-no-unknown': null,
     'at-rule-no-unknown': null,
     'declaration-empty-line-before': null,
     'no-descending-specificity': null,
+    'declaration-block-trailing-semicolon': 'always',
     'order/order': [
       'custom-properties',
       'declarations',
