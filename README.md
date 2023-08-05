@@ -27,7 +27,7 @@
 - **Static(public)**
 - **Root(src)** <br/>
 - ⎣&nbsp;**api** - rest api <br/>
-- ⎣&nbsp;**assets** - image, icon, font 등 <br/>
+- ⎣&nbsp;**assets** - 정적 데이터, 파일 등 <br/>
 - ⎣&nbsp;**components** - 최소 단위 컴포넌트(비즈니스 로직, 상태값 사용 불가) <br/>
 - ⎣&nbsp;**containers** - 컨트롤 로직이 존재하는 뷰 컴포넌트, 최소 단위 컴포넌트의 조합으로 만들어진다. <br/>
 - ⎣&nbsp;**interface** - 객체 타입 지정을 모아두는 공간 <br/>
