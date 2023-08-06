@@ -98,7 +98,7 @@ store.getData()
   @include boxSet(00px, 00px, 00px)
 
   // 컬러 세트(폰트 컬러, 배경 컬러)
-  @include colorSet(#000000, #000000)
+  @include colorSet($white, $black)
 
   // 배경 세트(이미지, 사이즈)
   @include backgroundSet('url', 00px)
