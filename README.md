@@ -1,4 +1,4 @@
-# Vue3 Awesome Starter
+# Ryan's Vue3 Awesome Starter
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
@@ -55,13 +55,9 @@ setting.json 파일을 vscode 세팅에 입력
 npm run dev
 ```
 
-## Using with Vue3 Setup
+## Using with Vue3 Script Setup
 
 ```vue
-<template>
-  <h1>{{ title }}</h1>
-</template>
-
 <script setup lang="ts">
 // 함수 생성
 const function = () => {console.log('Hello World!')}
