@@ -41,8 +41,8 @@
 ## Getting Started
 ### 1) Installation
 ```shell
-git clone ryan-ahn/boilerplate-vue3-webpack
-cd boilerplate-vue3-webpack
+git clone ryan-ahn/boilerplate-vue3-view
+cd boilerplate-vue3-view
 npm install
 ```
 ### 2) Configuration VSCode
