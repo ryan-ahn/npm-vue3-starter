@@ -42,7 +42,7 @@
 ### 1) Installation
 ```shell
 git clone ryan-ahn/boilerplate-vue3-client
-cd boilerplate-vue3-view
+cd boilerplate-vue3-client
 npm install
 ```
 ### 2) Configuration VSCode
