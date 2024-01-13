@@ -18,7 +18,7 @@
 - [ ] 🗂️&nbsp;&nbsp;SSR & Page SEO
 - [ ] 🪄&nbsp;&nbsp;Theme Mode
 
-## Framworks
+## Frameworks
 - **Bundler** : Webpack
 - **Core** : Vue3
 - **Store** : Pinia
