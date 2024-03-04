@@ -16,8 +16,9 @@
     "stylelint",
     "boilerplate"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": "./bin/npm.js",
+  "type": "module",
   "private": false,
   "scripts": {
     "dev": "vue-cli-service serve",
