@@ -17,6 +17,7 @@
     "boilerplate"
   ],
   "version": "1.0.2",
+  "bin": "./bin/npm.js",
   "private": false,
   "scripts": {
     "dev": "vue-cli-service serve",
