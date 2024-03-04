@@ -42,7 +42,6 @@
 ```shell
 npx vue3-starter my-project
 cd my-project
-npm install
 ```
 ### 2) Run development server
 ```shell
