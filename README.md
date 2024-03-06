@@ -1,8 +1,10 @@
 # Ryan's Vue3 Awesome Starter
 
+
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/npm-vue3-starter)
+
 
 ## Features
 - [x] 📦&nbsp;&nbsp;Typed Programming (Typescript)
@@ -18,9 +20,11 @@
 - [ ] 🗂️&nbsp;&nbsp;SSR & Page SEO
 - [ ] 🪄&nbsp;&nbsp;Theme Mode
 
+
 ## Frameworks
 - **Core** : Vue3
 - **Store** : Pinia
+
 
 ## Code Pattern
 - **Static(public)**
@@ -37,6 +41,7 @@
 - ⎣&nbsp;**utils** - hooks, utils <br/>
 - ⎣&nbsp;**views** - pages <br/>
 
+
 ## Getting Started
 ### 1) Installation
 ```shell
@@ -48,6 +53,7 @@ cd my-project
 npm run dev
 ```
 
+
 ## Using with Vue3 Script Setup
 
 ```vue
@@ -58,6 +64,7 @@ const function = () => {console.log('Hello World!')}
 const props = defineProps({title})
 </script>
 ```
+
 
 ## Using with Store
 
@@ -72,9 +79,8 @@ const { data } = storeToRefs(store);
 // use store function
 store.getData()
 </script>
-
-<style lang="scss">
 ```
+
 
 ## Using Mixin
 

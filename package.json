@@ -5,6 +5,11 @@
     "email": "kaaiinn4@gmail.com",
     "url": "https://github.com/ryan-ahn"
   },
+  "homepage": "https://github.com/ryan-ahn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryan-ahn/npm-react18-starter.git"
+  },
   "license": "MIT",
   "description": "Start a Vue3 Pinia Typescript project in few second!",
   "keywords": [
@@ -16,7 +21,7 @@
     "stylelint",
     "boilerplate"
   ],
-  "version": "1.0.6",
+  "version": "1.0.7",
   "bin": "./bin/npm.js",
   "type": "module",
   "private": false,
